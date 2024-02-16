@@ -4,7 +4,7 @@
 
 Getting a random element from a list is usually done in this way:
 
-```
+```csharp
 var rng = new System.Random();
 var chosenElement = list[rng.Next(0, list.Count)];
 ```
@@ -13,7 +13,7 @@ var chosenElement = list[rng.Next(0, list.Count)];
 
 With this package, the above segment can now be written as:
 
-```
+```csharp
 using CLSS;
 
 var chosenElement = list.GetRandom();
@@ -23,7 +23,7 @@ Internally, this package uses and depends on the `Constants.DefaultRandom` packa
 
 Optionally, `GetRandom` also takes in a `System.Random` of your choosing in case you want a custom-seeded random number generator:
 
-```
+```csharp
 using CLSS;
 
 var chosenElement = list.GetRandom(customrng);
